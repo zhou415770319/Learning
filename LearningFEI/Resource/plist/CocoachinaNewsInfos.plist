@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>iOS开发</string>
+		<key>urlString</key>
+		<string>/ios/list_69_1.html</string>
+		<key>replyUrl</key>
+		<string>iOS</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Swift</string>
+		<key>urlString</key>
+		<string>/swift/list_73_1.html</string>
+		<key>replyUrl</key>
+		<string>Swift</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>App Store</string>
+		<key>urlString</key>
+		<string>/appstore/list_72_1.html</string>
+		<key>replyUrl</key>
+		<string>appstore</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>产品设计</string>
+		<key>urlString</key>
+		<string>/design/list_77_1.html</string>
+		<key>replyUrl</key>
+		<string>design</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>应用</string>
+		<key>urlString</key>
+		<string>/review/list_82_1.html</string>
+		<key>replyUrl</key>
+		<string>review</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>VR</string>
+		<key>urlString</key>
+		<string>/vr/list_84_1.html</string>
+		<key>replyUrl</key>
+		<string>vr</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>游戏开发</string>
+		<key>urlString</key>
+		<string>/game/list_68_1.html</string>
+		<key>replyUrl</key>
+		<string>game</string>
+	</dict>
+</array>
+</plist>

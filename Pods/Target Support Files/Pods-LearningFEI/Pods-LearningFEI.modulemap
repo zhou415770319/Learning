@@ -1,0 +1,6 @@
+framework module Pods_LearningFEI {
+  umbrella header "Pods-LearningFEI-umbrella.h"
+
+  export *
+  module * { export * }
+}

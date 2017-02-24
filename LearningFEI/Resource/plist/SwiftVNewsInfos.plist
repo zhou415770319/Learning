@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Swift初级</string>
+		<key>urlString</key>
+		<string>/course/explore/hw4yrq6p</string>
+		<key>replyUrl</key>
+		<string>Swift初级教程</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Swift进阶</string>
+		<key>urlString</key>
+		<string>/course/explore/hw4ytn7s</string>
+		<key>replyUrl</key>
+		<string>Swift进阶教程</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Swift高级</string>
+		<key>urlString</key>
+		<string>/course/explore/hw4ytwj6</string>
+		<key>replyUrl</key>
+		<string>Swift高级教程</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>国外Swift</string>
+		<key>urlString</key>
+		<string>/course/explore/hwiuosfk</string>
+		<key>replyUrl</key>
+		<string>国外Swift视频</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>iOS相关</string>
+		<key>urlString</key>
+		<string>/course/explore/hwxetany</string>
+		<key>replyUrl</key>
+		<string>iOS相关视频</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>UI设计</string>
+		<key>urlString</key>
+		<string>/course/explore/hw7dzwku</string>
+		<key>replyUrl</key>
+		<string>UI设计</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Other</string>
+		<key>urlString</key>
+		<string>/course/explore/hw7vcsdz</string>
+		<key>replyUrl</key>
+		<string>Other</string>
+	</dict>
+</array>
+</plist>

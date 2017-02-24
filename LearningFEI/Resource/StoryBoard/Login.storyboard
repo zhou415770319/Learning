@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5pT-80-i3u">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0PF-Oh-UHn">
+            <objects>
+                <navigationController storyboardIdentifier="login" navigationBarHidden="YES" id="5pT-80-i3u" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DNM-Gb-Eq7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8My-Ss-FsF" kind="relationship" relationship="rootViewController" id="Ls2-4h-uSu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L5s-rp-2bG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-850" y="1045"/>
+        </scene>
+        <!--LoginView-->
+        <scene sceneID="yya-SD-Uy0">
+            <objects>
+                <viewController title="LoginView" id="8My-Ss-FsF" customClass="LoginViewController" customModule="LearningFEI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IvL-lM-h35"/>
+                        <viewControllerLayoutGuide type="bottom" id="N67-2o-mTs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oxy-2d-iUo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.png" translatesAutoresizingMaskIntoConstraints="NO" id="i0i-q9-twK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7d-UT-WdO" customClass="AnimatableView" customModule="IBAnimatable">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYc-lC-G2k" userLabel="Back button" customClass="AnimatableButton" customModule="IBAnimatable">
+                                        <rect key="frame" x="8" y="20" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="9ib-Qc-rgJ"/>
+                                            <constraint firstAttribute="height" constant="44" id="CfE-4m-rF7"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <segue destination="mKN-dG-IGG" kind="unwind" unwindAction="dismissCurrentViewController:" id="2OK-37-nyd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CYc-lC-G2k" firstAttribute="top" secondItem="U7d-UT-WdO" secondAttribute="top" constant="20" id="Kfj-KV-aM3"/>
+                                    <constraint firstItem="CYc-lC-G2k" firstAttribute="leading" secondItem="U7d-UT-WdO" secondAttribute="leading" constant="8" id="e6G-Hr-t5K"/>
+                                    <constraint firstAttribute="height" constant="64" id="ger-oc-SPl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xDn-wB-OrC" customClass="AnimatableStackView" customModule="IBAnimatable">
+                                <rect key="frame" x="10" y="214" width="355" height="240"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VQT-ZF-Yhu" userLabel="Username text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="STR-78-Caf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageLeftPadding">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="username"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQw-Zv-Zrz" userLabel="Password text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="60" width="355" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Be3-vs-97f"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageLeftPadding">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwN-eg-qmV" userLabel="Sign in button" customClass="AnimatableButton" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="120" width="355" height="60"/>
+                                        <color key="backgroundColor" red="0.72941176470000002" green="0.46666666670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ytX-0v-orw"/>
+                                        </constraints>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.72941176470000002" green="0.46666666670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="GCM-c7-Cbp" kind="push" id="OZw-4w-75x"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfW-Kb-ZTP">
+                                        <rect key="frame" x="0.0" y="180" width="355" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fk-TQ-gnq">
+                                                <rect key="frame" x="10" y="15" width="107" height="30"/>
+                                                <state key="normal" title="Create Account">
+                                                    <color key="titleColor" red="0.72941176470000002" green="0.46666666670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="WPV-sA-QaM" kind="presentation" id="uJc-I3-Ldd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVZ-P4-I2j">
+                                                <rect key="frame" x="230" y="15" width="115" height="30"/>
+                                                <state key="normal" title="Forget Password">
+                                                    <color key="titleColor" red="0.72941176470000002" green="0.46666666670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="baH-hH-fQv" kind="presentation" id="P5J-VM-R5j"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="FVZ-P4-I2j" firstAttribute="centerY" secondItem="nfW-Kb-ZTP" secondAttribute="centerY" id="6rz-FR-8m4"/>
+                                            <constraint firstItem="8Fk-TQ-gnq" firstAttribute="centerY" secondItem="nfW-Kb-ZTP" secondAttribute="centerY" id="8vt-fG-fqz"/>
+                                            <constraint firstAttribute="trailing" secondItem="FVZ-P4-I2j" secondAttribute="trailing" constant="10" id="CiV-66-EsQ"/>
+                                            <constraint firstItem="8Fk-TQ-gnq" firstAttribute="leading" secondItem="nfW-Kb-ZTP" secondAttribute="leading" constant="10" id="G66-Z1-y25"/>
+                                            <constraint firstAttribute="height" constant="60" id="bRr-W7-NRc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="Shake"/>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i0i-q9-twK" firstAttribute="centerY" secondItem="oxy-2d-iUo" secondAttribute="centerY" id="5yD-aG-i3k"/>
+                            <constraint firstItem="xDn-wB-OrC" firstAttribute="centerY" secondItem="oxy-2d-iUo" secondAttribute="centerY" id="BsH-w7-wG0"/>
+                            <constraint firstItem="U7d-UT-WdO" firstAttribute="top" secondItem="oxy-2d-iUo" secondAttribute="top" id="ELC-33-sdK"/>
+                            <constraint firstItem="U7d-UT-WdO" firstAttribute="leading" secondItem="oxy-2d-iUo" secondAttribute="leading" id="IaN-U8-S5A"/>
+                            <constraint firstItem="i0i-q9-twK" firstAttribute="height" secondItem="oxy-2d-iUo" secondAttribute="height" id="cYA-Dv-48y"/>
+                            <constraint firstItem="i0i-q9-twK" firstAttribute="width" secondItem="oxy-2d-iUo" secondAttribute="width" id="g88-Ns-74i"/>
+                            <constraint firstItem="xDn-wB-OrC" firstAttribute="centerX" secondItem="oxy-2d-iUo" secondAttribute="centerX" id="iA7-pC-HK7"/>
+                            <constraint firstItem="U7d-UT-WdO" firstAttribute="width" secondItem="oxy-2d-iUo" secondAttribute="width" id="jDl-Iw-gYE"/>
+                            <constraint firstItem="i0i-q9-twK" firstAttribute="centerX" secondItem="oxy-2d-iUo" secondAttribute="centerX" id="qpi-Zm-HhY"/>
+                            <constraint firstItem="xDn-wB-OrC" firstAttribute="width" secondItem="oxy-2d-iUo" secondAttribute="width" constant="-20" id="rH4-x6-z87"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Nq-pM-bwS"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <fixedSimulatedSizeMetrics key="simulatedDestinationMetrics">
+                        <size key="portraitSize" width="375" height="667"/>
+                        <size key="landscapeSize" width="667" height="375"/>
+                    </fixedSimulatedSizeMetrics>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdl-6c-tRj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="mKN-dG-IGG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="1045"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="YuE-5w-yoq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="1e9-qn-jEG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIu-1f-8H4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="1282"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4Je-Et-VbU">
+            <objects>
+                <tabBarController id="GCM-c7-Cbp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kUn-b4-5wF"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="1tj-rb-gUZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Kb1-VN-AYh" kind="relationship" relationship="viewControllers" id="JAh-OH-95B"/>
+                        <segue destination="YjM-fs-fL0" kind="relationship" relationship="viewControllers" id="bto-Zh-juX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uH3-wz-uFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1159" y="1045"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="lJL-GU-CPZ">
+            <objects>
+                <viewController id="Kb1-VN-AYh" customClass="AccountViewController" customModule="LearningFEI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t83-3R-jK5"/>
+                        <viewControllerLayoutGuide type="bottom" id="U43-gs-9Hd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6gM-xu-Yta">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IdY-HF-25d">
+                                <rect key="frame" x="32" y="143" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="退出"/>
+                                <connections>
+                                    <segue destination="ME4-zS-5NU" kind="unwind" unwindAction="dismissCurrentViewController:" id="GX1-II-Hhr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="icon_img" id="UXs-56-p5U"/>
+                    <navigationItem key="navigationItem" id="AbF-N5-p7z"/>
+                    <connections>
+                        <outlet property="btn" destination="IdY-HF-25d" id="zFM-Eo-IYB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RQc-nk-YJ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ME4-zS-5NU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2869.5999999999999" y="816.34182908545733"/>
+        </scene>
+        <!--Create Account View Controller-->
+        <scene sceneID="ATN-44-maP">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="WPV-sA-QaM" userLabel="Create Account View Controller" customClass="CreateAccountViewController" customModule="LearningFEI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L1G-Bb-ZXt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Crd-DR-lEF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QHH-2R-Los">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLp-V6-fVk" customClass="AnimatableView" customModule="IBAnimatable">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="255"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzO-OU-2rg" userLabel="Back button" customClass="AnimatableButton" customModule="IBAnimatable">
+                                        <rect key="frame" x="8" y="20" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="LdZ-mv-HCz"/>
+                                            <constraint firstAttribute="height" constant="44" id="yO2-d1-qVU"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <segue destination="i57-F3-LNg" kind="unwind" unwindAction="unwindToViewController:" id="dTm-eD-A6N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndZ-uI-6xt" userLabel="Done button" customClass="AnimatableButton" customModule="IBAnimatable">
+                                        <rect key="frame" x="323" y="20" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="cpy-Ef-SfR"/>
+                                            <constraint firstAttribute="height" constant="44" id="e0Q-ji-kWl"/>
+                                        </constraints>
+                                        <state key="normal" image="done"/>
+                                        <connections>
+                                            <action selector="Commit:" destination="WPV-sA-QaM" eventType="touchUpInside" id="awU-wq-4RJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-gu-Fmt" userLabel="Add photo button" customClass="AnimatableButton" customModule="IBAnimatable">
+                                        <rect key="frame" x="163" y="124" width="50" height="51"/>
+                                        <state key="normal" image="add-photo"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="Pop"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.80000000000000004"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ndZ-uI-6xt" secondAttribute="trailing" constant="8" id="4oz-I2-CX6"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cve-gu-Fmt" secondAttribute="bottom" constant="80" id="9gJ-Zi-cE8"/>
+                                    <constraint firstItem="ndZ-uI-6xt" firstAttribute="top" secondItem="SzO-OU-2rg" secondAttribute="top" id="C3e-n3-VC0"/>
+                                    <constraint firstItem="SzO-OU-2rg" firstAttribute="top" secondItem="LLp-V6-fVk" secondAttribute="top" constant="20" id="Xzg-R2-xQb"/>
+                                    <constraint firstItem="Cve-gu-Fmt" firstAttribute="centerX" secondItem="LLp-V6-fVk" secondAttribute="centerX" id="cpG-6Y-zMs"/>
+                                    <constraint firstItem="SzO-OU-2rg" firstAttribute="leading" secondItem="LLp-V6-fVk" secondAttribute="leading" constant="8" id="iEm-Uy-x1B"/>
+                                    <constraint firstAttribute="height" constant="255" id="uaQ-L0-04F"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.72941176470000002" green="0.46666666670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LbH-fg-bVc">
+                                <rect key="frame" x="20" y="255" width="335" height="290"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6UO-UB-jbz" userLabel="Name text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="e3T-nA-eIm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.0047015282330000003" green="0.086820021270000006" blue="0.1116891056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="FadeInRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.59999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="username"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="slideFade(in,right)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_borderSides" value="bottom"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="Close:" destination="WPV-sA-QaM" eventType="editingDidEndOnExit" id="QU6-24-id5"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T0R-IA-APy" userLabel="Email text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="60" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="PbT-23-p22"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.0047015282330000003" green="0.086820021270000006" blue="0.1116891056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="FadeInRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.65000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="email"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="slideFade(in,right)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_borderSides" value="bottom"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="Close:" destination="WPV-sA-QaM" eventType="editingDidEndOnExit" id="0bD-YG-AXg"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tsw-GC-tBc" userLabel="Password text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="120" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="On5-tB-jsq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.0047015282330000003" green="0.086820021270000006" blue="0.1116891056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="FadeInRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.69999999999999996"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="slideFade(in,right)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_borderSides" value="bottom"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="Close:" destination="WPV-sA-QaM" eventType="editingDidEndOnExit" id="yoG-sP-Ggi"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wt7-o4-m6h" userLabel="Birthday text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="180" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3Yf-kI-9co"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.0047015282330000003" green="0.086820021270000006" blue="0.1116891056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="FadeInRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.75"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="birthday"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="slideFade(in,right)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_borderSides" value="bottom"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="Close:" destination="WPV-sA-QaM" eventType="editingDidEndOnExit" id="sik-pr-RL1"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wkh-Bt-wtI" userLabel="Gender text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="240" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="9M0-vS-GSH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.0047015282330000003" green="0.086820021270000006" blue="0.1116891056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="FadeInRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.80000000000000004"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="gender"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="slideFade(in,right)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_borderSides" value="bottom"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="Close:" destination="WPV-sA-QaM" eventType="editingDidEndOnExit" id="RMy-bd-Kwh"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EMr-is-H9u">
+                                <rect key="frame" x="81" y="617" width="213" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxm-Fd-Lvv">
+                                        <rect key="frame" x="0.0" y="0.0" width="156" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="156" id="42J-Gh-B9R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXd-yP-y9L" userLabel="Sign in button">
+                                        <rect key="frame" x="166" y="0.0" width="47" height="30"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="i57-F3-LNg" kind="unwind" unwindAction="unwindToViewController:" id="IgK-et-bkN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LbH-fg-bVc" firstAttribute="leading" secondItem="QHH-2R-Los" secondAttribute="leading" constant="20" symbolic="YES" id="0th-Az-Dhc"/>
+                            <constraint firstAttribute="trailing" secondItem="LLp-V6-fVk" secondAttribute="trailing" id="2Il-s6-LGa"/>
+                            <constraint firstAttribute="trailing" secondItem="LbH-fg-bVc" secondAttribute="trailing" constant="20" symbolic="YES" id="QFf-1M-OAb"/>
+                            <constraint firstItem="LbH-fg-bVc" firstAttribute="top" secondItem="LLp-V6-fVk" secondAttribute="bottom" id="Sbl-cv-lXt"/>
+                            <constraint firstItem="LLp-V6-fVk" firstAttribute="leading" secondItem="QHH-2R-Los" secondAttribute="leading" id="X9J-uX-Bl2"/>
+                            <constraint firstItem="LLp-V6-fVk" firstAttribute="top" secondItem="QHH-2R-Los" secondAttribute="top" id="f9s-2m-kZM"/>
+                            <constraint firstItem="LbH-fg-bVc" firstAttribute="top" secondItem="LLp-V6-fVk" secondAttribute="bottom" id="kAM-v7-aDs"/>
+                            <constraint firstItem="Crd-DR-lEF" firstAttribute="top" secondItem="EMr-is-H9u" secondAttribute="bottom" constant="20" id="pk9-bR-b4t"/>
+                            <constraint firstItem="EMr-is-H9u" firstAttribute="centerX" secondItem="LbH-fg-bVc" secondAttribute="centerX" id="q0k-mj-dtI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1dW-6y-MJF"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="lightStatusBar" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="HeaderView" destination="LLp-V6-fVk" id="eVw-hQ-9at"/>
+                        <outlet property="UserBirthday" destination="wt7-o4-m6h" id="Ul7-se-WQ7"/>
+                        <outlet property="UserEmail" destination="T0R-IA-APy" id="sbK-i1-y2B"/>
+                        <outlet property="UserGender" destination="Wkh-Bt-wtI" id="BPD-jY-Hpy"/>
+                        <outlet property="UserName" destination="6UO-UB-jbz" id="1tb-hf-Udd"/>
+                        <outlet property="UserPassword" destination="Tsw-GC-tBc" id="I3a-jR-eWJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rg2-WO-nmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="i57-F3-LNg" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="276"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="beg-by-jHs">
+            <objects>
+                <viewController id="baH-hH-fQv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gQX-g4-y2O"/>
+                        <viewControllerLayoutGuide type="bottom" id="KAR-ir-SZY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6iX-j6-uw8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZk-v7-mPG" customClass="AnimatableView" customModule="IBAnimatable">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd5-rN-YUJ" userLabel="Back button" customClass="AnimatableButton" customModule="IBAnimatable">
+                                        <rect key="frame" x="8" y="20" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="JYF-Nl-wnX"/>
+                                            <constraint firstAttribute="width" constant="44" id="iip-1f-vlb"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <segue destination="XFB-wf-9fT" kind="unwind" unwindAction="unwindToViewController:" id="yLA-zb-0cw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2s-HE-Z3d" userLabel="Done button" customClass="AnimatableButton" customModule="IBAnimatable">
+                                        <rect key="frame" x="323" y="20" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="WUt-hp-R6e"/>
+                                            <constraint firstAttribute="width" constant="44" id="fVh-nQ-cq9"/>
+                                        </constraints>
+                                        <state key="normal" image="done"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="N2s-HE-Z3d" firstAttribute="top" secondItem="nd5-rN-YUJ" secondAttribute="top" id="CAx-Zq-xeW"/>
+                                    <constraint firstAttribute="height" constant="64" id="CSh-he-VdF"/>
+                                    <constraint firstItem="nd5-rN-YUJ" firstAttribute="top" secondItem="eZk-v7-mPG" secondAttribute="top" constant="20" id="E2X-pO-6Hw"/>
+                                    <constraint firstItem="nd5-rN-YUJ" firstAttribute="leading" secondItem="eZk-v7-mPG" secondAttribute="leading" constant="8" id="Lbi-si-Hlr"/>
+                                    <constraint firstAttribute="trailing" secondItem="N2s-HE-Z3d" secondAttribute="trailing" constant="8" id="Z8F-si-vAI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.72941176470000002" green="0.46666666670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r2S-gh-HWl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="100"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iz1-LZ-ESW" userLabel="Name text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Irt-B5-rlm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.0047015282330000003" green="0.086820021270000006" blue="0.1116891056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="FadeInRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.59999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="username"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="slideFade(in,right)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_borderSides" value="bottom"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zDl-d8-R1d" userLabel="Name text field" customClass="AnimatableTextField" customModule="IBAnimatable">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ggf-1L-9eV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftImageRightPadding">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.086750656369999998" green="0.08585051447" blue="0.11175550519999999" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.0047015282330000003" green="0.086820021270000006" blue="0.1116891056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="FadeInRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.59999999999999998"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="username"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_animationType" value="slideFade(in,right)"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="_borderSides" value="bottom"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r2S-gh-HWl" firstAttribute="top" secondItem="eZk-v7-mPG" secondAttribute="bottom" id="FZ7-vi-hft"/>
+                            <constraint firstItem="eZk-v7-mPG" firstAttribute="top" secondItem="6iX-j6-uw8" secondAttribute="top" id="Ymw-gA-Sp6"/>
+                            <constraint firstItem="r2S-gh-HWl" firstAttribute="leading" secondItem="6iX-j6-uw8" secondAttribute="leading" id="axX-nM-Yqy"/>
+                            <constraint firstItem="eZk-v7-mPG" firstAttribute="width" secondItem="6iX-j6-uw8" secondAttribute="width" id="d3v-2g-MOi"/>
+                            <constraint firstItem="r2S-gh-HWl" firstAttribute="width" secondItem="6iX-j6-uw8" secondAttribute="width" id="fwT-D9-g5m"/>
+                            <constraint firstItem="eZk-v7-mPG" firstAttribute="leading" secondItem="6iX-j6-uw8" secondAttribute="leading" id="uZl-m7-rTp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDu-zP-yHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XFB-wf-9fT" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="1897"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Og7-CR-oEs">
+            <objects>
+                <viewController id="YjM-fs-fL0" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VrF-Mn-iJs"/>
+                        <viewControllerLayoutGuide type="bottom" id="aKd-Qc-Ivr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o0c-UN-ZFH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="icon_can" id="aWU-xc-XlP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KcP-LX-Xsb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2870" y="1569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0.png" width="352" height="220"/>
+        <image name="add-photo" width="50" height="51"/>
+        <image name="back" width="21" height="21"/>
+        <image name="birthday" width="20" height="22"/>
+        <image name="done" width="23" height="17"/>
+        <image name="email" width="21" height="18"/>
+        <image name="gender" width="20" height="26"/>
+        <image name="icon_can" width="50" height="50"/>
+        <image name="icon_img" width="50" height="50"/>
+        <image name="password" width="20" height="22"/>
+        <image name="username" width="20" height="19"/>
+    </resources>
+</document>

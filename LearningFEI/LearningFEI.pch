@@ -1,0 +1,31 @@
+//
+//  LearningFEI.pch
+//  LearningFEI
+//
+//  Created by 周飞 on 2017/2/8.
+//  Copyright © 2017年 ZF. All rights reserved.
+//
+
+#ifndef LearningFEI_pch
+#define LearningFEI_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* LearningFEI_pch */
+
+#import "UIView+Toast.h"
+
+#define BaseUrl_code4App @"http://code4app.qiniudn.com"
+#define BaseUrl_cocoaChina @"http://www.cocoachina.com"
+#define BaseUrl_swiftv @"http://www.swiftv.cn"
+#define BokeUrl @"https://zhou415770319.github.io/"
+
+#import <BmobSDK/Bmob.h>
+
+
+#define SCREENWIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREENHEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define SELF_VIEW_HEIGHT (self.view.bounds.size.height)
+
+
