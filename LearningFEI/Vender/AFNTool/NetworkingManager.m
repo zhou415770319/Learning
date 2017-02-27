@@ -53,11 +53,9 @@
     
     //如果数据库里面有值就先读取数据库
     if(model.idStr.length>0){
-        //        NSData *data=[XWDataCacheTool dataWithID:model.idStr];
         AFNResponseModel *resModel = [XWDataCacheTool modelWithID:model.idStr];
         
         if((resModel.arr != nil &&resModel.arr.count !=0) || resModel.dict !=nil ){
-            //            AFNResponseModel *model = [self responseModelWithData:data];
             success(resModel);
             return;
         }
@@ -75,7 +73,6 @@
             [XWDataCacheTool deleteWidthId:model.idStr];
             //做数据缓存
             [XWDataCacheTool addModel:resModel andId:model.idStr];
-            //            [XWDataCacheTool addData:[self dataWithResponseModel:resModel] andId:model.idStr];
         }
         success(resModel);
         

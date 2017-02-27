@@ -11,7 +11,6 @@
 		9116F9471E55817500024BAB /* CocoaChina.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9116F9461E55817500024BAB /* CocoaChina.storyboard */; };
 		9116F9491E56966700024BAB /* Code4app.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9116F9481E56966700024BAB /* Code4app.storyboard */; };
 		9116F94E1E56A35100024BAB /* Code4AppHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116F94D1E56A35100024BAB /* Code4AppHomeViewController.m */; };
-		9116F9611E5A85D000024BAB /* AFNetworkingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116F95A1E5A85D000024BAB /* AFNetworkingTool.m */; };
 		9116F9621E5A85D000024BAB /* AFNRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116F95C1E5A85D000024BAB /* AFNRequestModel.m */; };
 		9116F9631E5A85D000024BAB /* NetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116F95E1E5A85D000024BAB /* NetworkingManager.m */; };
 		9116F9641E5A85D000024BAB /* XWDataCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116F9601E5A85D000024BAB /* XWDataCacheTool.m */; };
@@ -23,6 +22,9 @@
 		9116F9771E5AE8C600024BAB /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116F9761E5AE8C600024BAB /* MenuModel.m */; };
 		9116F97A1E5AE8DA00024BAB /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9116F9791E5AE8DA00024BAB /* MenuTableViewCell.m */; };
 		913E304E1E5EB79900E1D3F1 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913E304C1E5EB79900E1D3F1 /* Test.storyboard */; };
+		913E30511E60079300E1D3F1 /* TestContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913E30501E60079300E1D3F1 /* TestContentViewController.m */; };
+		913E30541E60107800E1D3F1 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913E30531E60107800E1D3F1 /* WebViewController.m */; };
+		913E30581E63C3A900E1D3F1 /* AFNetworkingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 913E30571E63C3A900E1D3F1 /* AFNetworkingTool.m */; };
 		9146D9321E5D31FD00DA4207 /* LinkurlTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9146D9311E5D31FD00DA4207 /* LinkurlTool.m */; };
 		9146D9351E5D37D000DA4207 /* AFNResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9146D9341E5D37D000DA4207 /* AFNResponseModel.m */; };
 		917835AF1E4AEA390006C8F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917835AE1E4AEA390006C8F3 /* AppDelegate.swift */; };
@@ -123,8 +125,6 @@
 		9116F9481E56966700024BAB /* Code4app.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Code4app.storyboard; sourceTree = "<group>"; };
 		9116F94C1E56A35100024BAB /* Code4AppHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Code4AppHomeViewController.h; sourceTree = "<group>"; };
 		9116F94D1E56A35100024BAB /* Code4AppHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Code4AppHomeViewController.m; sourceTree = "<group>"; };
-		9116F9591E5A85D000024BAB /* AFNetworkingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingTool.h; sourceTree = "<group>"; };
-		9116F95A1E5A85D000024BAB /* AFNetworkingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingTool.m; sourceTree = "<group>"; };
 		9116F95B1E5A85D000024BAB /* AFNRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNRequestModel.h; sourceTree = "<group>"; };
 		9116F95C1E5A85D000024BAB /* AFNRequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNRequestModel.m; sourceTree = "<group>"; };
 		9116F95D1E5A85D000024BAB /* NetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingManager.h; sourceTree = "<group>"; };
@@ -146,6 +146,12 @@
 		9116F9781E5AE8DA00024BAB /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
 		9116F9791E5AE8DA00024BAB /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
 		913E304D1E5EB79900E1D3F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LearningFEI/Base.lproj/Test.storyboard; sourceTree = SOURCE_ROOT; };
+		913E304F1E60079300E1D3F1 /* TestContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestContentViewController.h; sourceTree = "<group>"; };
+		913E30501E60079300E1D3F1 /* TestContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestContentViewController.m; sourceTree = "<group>"; };
+		913E30521E60107800E1D3F1 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		913E30531E60107800E1D3F1 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		913E30561E63C3A900E1D3F1 /* AFNetworkingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingTool.h; sourceTree = "<group>"; };
+		913E30571E63C3A900E1D3F1 /* AFNetworkingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingTool.m; sourceTree = "<group>"; };
 		9146D9301E5D31FD00DA4207 /* LinkurlTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkurlTool.h; sourceTree = "<group>"; };
 		9146D9311E5D31FD00DA4207 /* LinkurlTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkurlTool.m; sourceTree = "<group>"; };
 		9146D9331E5D37D000DA4207 /* AFNResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNResponseModel.h; sourceTree = "<group>"; };
@@ -308,8 +314,8 @@
 		9116F9581E5A85D000024BAB /* AFNTool */ = {
 			isa = PBXGroup;
 			children = (
-				9116F9591E5A85D000024BAB /* AFNetworkingTool.h */,
-				9116F95A1E5A85D000024BAB /* AFNetworkingTool.m */,
+				913E30561E63C3A900E1D3F1 /* AFNetworkingTool.h */,
+				913E30571E63C3A900E1D3F1 /* AFNetworkingTool.m */,
 				9116F95B1E5A85D000024BAB /* AFNRequestModel.h */,
 				9116F95C1E5A85D000024BAB /* AFNRequestModel.m */,
 				9146D9331E5D37D000DA4207 /* AFNResponseModel.h */,
@@ -607,6 +613,10 @@
 			children = (
 				91AD858A1E4D994B00D613ED /* AFNTestViewController.h */,
 				91AD858B1E4D994B00D613ED /* AFNTestViewController.m */,
+				913E304F1E60079300E1D3F1 /* TestContentViewController.h */,
+				913E30501E60079300E1D3F1 /* TestContentViewController.m */,
+				913E30521E60107800E1D3F1 /* WebViewController.h */,
+				913E30531E60107800E1D3F1 /* WebViewController.m */,
 			);
 			path = TestCode;
 			sourceTree = "<group>";
@@ -860,7 +870,9 @@
 				91A474F51E4B015E004EF815 /* CreateAccountViewController.swift in Sources */,
 				91A474881E4AF8CB004EF815 /* LoginViewController.swift in Sources */,
 				9116F9631E5A85D000024BAB /* NetworkingManager.m in Sources */,
+				913E30541E60107800E1D3F1 /* WebViewController.m in Sources */,
 				91AD85781E4D4B0400D613ED /* AccountViewController.swift in Sources */,
+				913E30511E60079300E1D3F1 /* TestContentViewController.m in Sources */,
 				9116F9771E5AE8C600024BAB /* MenuModel.m in Sources */,
 				9116F9711E5AE86E00024BAB /* CommonMenuView.m in Sources */,
 				9116F9681E5AC0DD00024BAB /* SXTitleLable.m in Sources */,
@@ -870,9 +882,9 @@
 				91AD85831E4D55AA00D613ED /* NSArray+Log.m in Sources */,
 				91AD85851E4D55AA00D613ED /* ZFSpiderTool.m in Sources */,
 				9116F97A1E5AE8DA00024BAB /* MenuTableViewCell.m in Sources */,
+				913E30581E63C3A900E1D3F1 /* AFNetworkingTool.m in Sources */,
 				91AD858C1E4D994B00D613ED /* AFNTestViewController.m in Sources */,
 				91AD857B1E4D537E00D613ED /* HomeViewController.m in Sources */,
-				9116F9611E5A85D000024BAB /* AFNetworkingTool.m in Sources */,
 				9116F9741E5AE8B200024BAB /* UIView+AdjustFrame.m in Sources */,
 				9116F96B1E5AC4E700024BAB /* NewsBokeViewController.m in Sources */,
 				9116F94E1E56A35100024BAB /* Code4AppHomeViewController.m in Sources */,

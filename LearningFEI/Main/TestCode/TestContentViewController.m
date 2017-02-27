@@ -1,25 +1,22 @@
 //
-//  AFNTestViewController.m
+//  TestContentViewController.m
 //  LearningFEI
 //
-//  Created by 周飞 on 2017/2/10.
+//  Created by 周飞 on 2017/2/24.
 //  Copyright © 2017年 ZF. All rights reserved.
 //
 
-#import "AFNTestViewController.h"
 #import "TestContentViewController.h"
 #import "NetworkingManager.h"
-
-@interface AFNTestViewController ()<UITableViewDelegate,UITableViewDataSource>
-
+#import "WebViewController.h"
+@interface TestContentViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,retain)NSMutableArray *infos;
 
 @property(nonatomic,retain)UITableView *tableView;
 
 @end
 
-@implementation AFNTestViewController
-
+@implementation TestContentViewController
 -(UITableView *)tableView{
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.frame];
@@ -32,17 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [btn setTitle:@"返回" forState:UIControlStateNormal];
-//    btn.backgroundColor = [UIColor blueColor];
-//    btn.frame = CGRectMake(0, 100, 80, 40);
-//    [btn addTarget:self action:@selector(backBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:btn];
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    
-    
     [self.view addSubview:self.tableView];
-    
+
     // Do any additional setup after loading the view.
 }
 
@@ -51,33 +39,21 @@
     
     [super viewWillAppear:animated];
     
-    NSString *url = @"http://www.cocoachina.com/swift/";
-    
     NSMutableDictionary *pars = [NSMutableDictionary dictionaryWithCapacity:1];
-//    [pars setObject:url forKey:@"urlStr"];
-    [[NetworkingManager standard] request:LINKURL_gold Parameters:pars Success:^(AFNResponseModel *model) {
-        
-//        NSDictionary *dict = model.arr[0];
-//        
-//        self.infos = [NSMutableArray arrayWithArray:[dict objectForKey:@"subCategory"]];
-        self.infos = model.arr;
+    [pars setObject:self.url forKey:@"urlStr"];
+    [[NetworkingManager standard] request:LINKURL_gold_contentInfo Parameters:pars Success:^(AFNResponseModel *model) {
+        NSDictionary *dict = model.arr[0];
+
+        self.infos = [NSMutableArray arrayWithArray:[dict objectForKey:@"subCategory"]];
+//        self.infos = [NSMutableArray arrayWithArray:model.arr];
         [self.tableView reloadData];
         NSLog(@"------arr----%@",model.arr);
     } Failture:^(id error) {
         NSLog(@"%@",error);
-
-    }];
-    
-}
-
-
--(void)backBtnClick:(UIButton *)sender{
-    
-    [self.navigationController dismissViewControllerAnimated:YES completion:^{
         
     }];
+    
 }
-
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
@@ -103,13 +79,14 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     
-    TestContentViewController *test = [[TestContentViewController alloc] init];
-    NSString *urlStr =[self.infos[indexPath.row] objectForKey:@"url"];
-    test.url =urlStr;
-    NSLog(@"urlStr------%@",urlStr);
+    WebViewController *test = [[WebViewController alloc] init];
+    test.title =[self.infos[indexPath.row] objectForKey:@"title"];
+    test.url =[self.infos[indexPath.row] objectForKey:@"url"];
+
     [self.navigationController pushViewController:test animated:YES];
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
