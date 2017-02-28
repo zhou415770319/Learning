@@ -55,7 +55,7 @@
     
     NSMutableDictionary *pars = [NSMutableDictionary dictionaryWithCapacity:1];
 //    [pars setObject:url forKey:@"urlStr"];
-    [[NetworkingManager standard] request:LINKURL_gold Parameters:pars Success:^(AFNResponseModel *model) {
+    [[NetworkingManager standard] request:LINKURL_cocoaChina Parameters:pars Success:^(AFNResponseModel *model) {
         
 //        NSDictionary *dict = model.arr[0];
 //        
