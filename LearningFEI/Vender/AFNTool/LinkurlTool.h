@@ -11,13 +11,18 @@
 #import "AFNResponseModel.h"
 typedef enum : NSUInteger {
     LINKURL_cocoaChina = 0,
+    LINKURL_cocoaChina_codeCategory,
     LINKURL_code4app,
+    LINKURL_jobbole,
+
     LINKURL_gold,
     LINKURL_health,
     
     LINKURL_code4app_contentInfo,
     LINKURL_cocoaChina_contentInfo,
     LINKURL_gold_contentInfo,
+    
+    
 
 
 } LINKURL;
