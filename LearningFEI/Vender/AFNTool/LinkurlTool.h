@@ -14,15 +14,18 @@ typedef enum : NSUInteger {
     LINKURL_cocoaChina_codeCategory,
     LINKURL_code4app,
     LINKURL_jobbole,
+    LINKURL_jobbole_blog,
 
     LINKURL_gold,
     LINKURL_health,
     
+    LINKURL_jobbole_subNaviHome,
+
+    
     LINKURL_code4app_contentInfo,
     LINKURL_cocoaChina_contentInfo,
     LINKURL_gold_contentInfo,
-    
-    
+    LINKURL_jobbole_contentInfo,
 
 
 } LINKURL;

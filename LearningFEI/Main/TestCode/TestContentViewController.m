@@ -9,6 +9,7 @@
 #import "TestContentViewController.h"
 #import "NetworkingManager.h"
 #import "WebViewController.h"
+#import "Test2ViewController.h"
 @interface TestContentViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,retain)NSMutableArray *infos;
 
@@ -41,13 +42,14 @@
     
     NSMutableDictionary *pars = [NSMutableDictionary dictionaryWithCapacity:1];
     [pars setObject:self.url forKey:@"urlStr"];
-    [[NetworkingManager standard] request:LINKURL_gold_contentInfo Parameters:pars Success:^(AFNResponseModel *model) {
-        NSDictionary *dict = model.arr[0];
-
-        self.infos = [NSMutableArray arrayWithArray:[dict objectForKey:@"subCategory"]];
-//        self.infos = [NSMutableArray arrayWithArray:model.arr];
-        [self.tableView reloadData];
+    [[NetworkingManager standard] request:LINKURL_jobbole_subNaviHome Parameters:pars Success:^(AFNResponseModel *model) {
         NSLog(@"------arr----%@",model.arr);
+
+//        NSDictionary *dict = model.arr[0];
+//
+//        self.infos = [NSMutableArray arrayWithArray:[dict objectForKey:@"subCategory"]];
+        self.infos = [NSMutableArray arrayWithArray:model.arr];
+        [self.tableView reloadData];
     } Failture:^(id error) {
         NSLog(@"%@",error);
         
@@ -79,7 +81,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     
-    WebViewController *test = [[WebViewController alloc] init];
+    Test2ViewController *test = [[Test2ViewController alloc] init];
     test.title =[self.infos[indexPath.row] objectForKey:@"title"];
     test.url =[self.infos[indexPath.row] objectForKey:@"url"];
 

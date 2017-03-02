@@ -18,29 +18,47 @@
                         ,@"http://code.cocoachina.com"
                         ,@"http://code4app.qiniudn.com"
                         ,@"http://www.jobbole.com"
-
+                        ,@"http://blog.jobbole.com"
                         ,@"https://gold.xitu.io"
                         ,@"health"];
     NSString *urlStr;
     AFNRequestModel *req = [[AFNRequestModel alloc] init];
 
     switch (url) {
-        case LINKURL_code4app_contentInfo:
             
-        case LINKURL_cocoaChina_contentInfo:
-            
-        case LINKURL_gold_contentInfo:
+//            url 写入arr中
+        case LINKURL_cocoaChina:
+        case LINKURL_cocoaChina_codeCategory:
+        case LINKURL_code4app:
+        case LINKURL_jobbole:
+        case LINKURL_jobbole_blog:
 
+        case LINKURL_gold:
+        case LINKURL_health:
+            urlStr = urlArr[url];
+            req.urlStr = urlStr;
+            req.idStr = nil;
+//            req.idStr = urlStr;
+
+            req.Parameters = parameters;
+            break;
+            
+//URL 传入的，且不缓存
+            case LINKURL_jobbole_subNaviHome:
+            case LINKURL_jobbole_contentInfo:
+            urlStr = [parameters objectForKey:@"urlStr"];
+            req.Parameters = nil;
+            req.urlStr = urlStr;
+            req.idStr = nil;
+//            req.idStr = urlStr;
+
+            break;
+        default:
+            
             urlStr = [parameters objectForKey:@"urlStr"];
             req.Parameters = nil;
             req.urlStr = urlStr;
             req.idStr = urlStr;
-            break;
-        default:
-            urlStr = urlArr[url];
-            req.urlStr = urlStr;
-            req.idStr = nil;
-            req.Parameters = parameters;
 
             break;
     }
@@ -62,35 +80,49 @@
             res.dict = [self cocoaChinaCodeCategory:responseObject];
             
             break;
-
-        case LINKURL_code4app://code4app主页数据
-            res.arr = [self code4appResponseObject:responseObject];
-            
-        case LINKURL_jobbole://jobbole(伯乐在线)主页数据
-            res.arr = [self jobboleResponseObject:responseObject];
-            
-            break;
-        case LINKURL_gold://gold（掘金）主页数据
-            res.arr = [self goldResponseObject:responseObject];
-
-            break;
-        case LINKURL_health://（养生app）主页数据
-            
-            break;
-            
-        case LINKURL_code4app_contentInfo://code4app (code分类信息列表)
-            res.arr = [self code4appContentResponseObject:responseObject];
-
-            break;
-            
         case LINKURL_cocoaChina_contentInfo://code4app (navi分类信息列表)
             res.arr = [self cocoaChinaContentResponseObject:responseObject];
+            
+            break;
+        case LINKURL_code4app://code4app主页数据
+            res.arr = [self code4appResponseObject:responseObject];
+            break;
+        case LINKURL_code4app_contentInfo://code4app (code分类信息列表)
+            res.arr = [self code4appContentResponseObject:responseObject];
+            
+            break;
+            
+
+        case LINKURL_jobbole://jobbole(伯乐在线)主页数据
+            res.arr = [self jobboleResponseObject:responseObject];
+            break;
+        case LINKURL_jobbole_blog://jobbole(伯乐在线)全部文章页面数据
+            res.arr = [self jobboleBlogResponseObject:responseObject];
+            break;
+        case LINKURL_jobbole_subNaviHome://jobbole(伯乐在线)分类主页数据
+            res.arr = [self jobboleSubNaviHome:responseObject];
+            
+            break;
+        case LINKURL_jobbole_contentInfo://jobbole(伯乐在线)分类列表数据
+            res.arr = [self jobboleContentInfo:responseObject];
+            
+            break;
+            
+            
+        case LINKURL_gold://gold（掘金）主页数据
+            res.arr = [self goldResponseObject:responseObject];
 
             break;
         case LINKURL_gold_contentInfo:
             res.arr = [self goldContentResponseObject:responseObject];
             
             break;
+        case LINKURL_health://（养生app）主页数据
+            
+            break;
+            
+            
+        
         default:
             break;
     }
@@ -540,12 +572,150 @@
             TFHppleElement *categoryE2 =[[h2 searchWithXPathQuery:@"//a"] firstObject];
             
             NSString *title = [categoryE2 text];
+        if (title == nil) {
+            TFHppleElement *categoryE3 =[[h2 searchWithXPathQuery:@"//a/span"] firstObject];
+            title = [categoryE3 text];
+        }
             NSString *url = [categoryE2 objectForKey:@"href"];
         NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:title,@"title",url,@"url", nil];
             [ma addObject:dic];
     }
     return ma;
 }
+
++(NSMutableArray *)jobboleBlogResponseObject:(id)responseObject{
+    
+    TFHpple *hpple = [TFHpple hppleWithHTMLData:responseObject];
+    
+    NSMutableArray *ma = [NSMutableArray arrayWithCapacity:1];
+
+    TFHppleElement *categoryE1 =[[hpple searchWithXPathQuery:@"//ul[contains(@id, 'main-nav-menu')]"] firstObject];
+    TFHpple *h1 =[TFHpple hppleWithHTMLData:[categoryE1.raw dataUsingEncoding:NSUTF8StringEncoding]];
+    NSArray *arr = [h1 searchWithXPathQuery:@"//li[contains(@class, 'menu-item-has-children')]"];
+    for (int i = 0; i<arr.count; i++) {
+        NSMutableArray *ma1 = [NSMutableArray arrayWithCapacity:1];
+
+        TFHppleElement *e2 = arr[i];
+        
+        TFHpple *h2 =[TFHpple hppleWithHTMLData:[e2.raw dataUsingEncoding:NSUTF8StringEncoding]];
+        TFHppleElement *categoryE2 =[[h2 searchWithXPathQuery:@"//a"] firstObject];
+
+        NSArray *arr2 = [h2 searchWithXPathQuery:@"//ul[contains(@class, 'sub-menu')]/li[contains(@class, 'menu-item-object-custom')]"];
+
+        for (int i = 0; i<arr2.count; i++) {
+            TFHppleElement *e3 = arr2[i];
+            TFHpple *h3 =[TFHpple hppleWithHTMLData:[e3.raw dataUsingEncoding:NSUTF8StringEncoding]];
+            TFHppleElement *categoryE3 =[[h3 searchWithXPathQuery:@"//a"] firstObject];
+            NSString *title = [categoryE3 text];
+            
+            NSString *url = [categoryE3 objectForKey:@"href"];
+            if (title == nil) {
+                TFHppleElement *categoryE3 =[[h3 searchWithXPathQuery:@"//a/span"] firstObject];
+                title = [categoryE3 text];
+            }
+            NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:title,@"title",url,@"url", nil];
+            [ma1 addObject:dic];
+        }
+        
+        NSString *title = [categoryE2 text];
+        NSString *url = [categoryE2 objectForKey:@"href"];
+        if (title == nil) {
+            TFHppleElement *categoryE3 =[[h2 searchWithXPathQuery:@"//a/span"] firstObject];
+            title = [categoryE3 text];
+        }
+        NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:title,@"title",url,@"url", ma1,@"subNavi",nil];
+        [ma addObject:dic];
+
+    }
+    NSMutableArray *ma1 = [NSMutableArray arrayWithCapacity:1];
+    NSDictionary *dict1 = [NSDictionary dictionaryWithObjectsAndKeys:@"IT 职场",@"title",@"http://blog.jobbole.com/category/career/",@"url", ma1,@"subNavi",nil];
+    NSDictionary *dict2 = [NSDictionary dictionaryWithObjectsAndKeys:@"数据库",@"title",@"http://blog.jobbole.com/tag/database/",@"url", ma1,@"subNavi",nil];
+
+    [ma addObject:dict1];
+    [ma addObject:dict2];
+
+    
+//    NSArray *arr1 = @[@"http://blog.jobbole.com/category/career/",@"http://blog.jobbole.com/tag/database/"];
+//    for (int i = 0; i<arr1.count; i++) {
+//        NSMutableArray *ma1 = [NSMutableArray arrayWithCapacity:1];
+//        
+//        TFHppleElement *e2 = arr1[i];
+//        
+//        TFHpple *h2 =[TFHpple hppleWithHTMLData:[e2.raw dataUsingEncoding:NSUTF8StringEncoding]];
+//        TFHppleElement *categoryE2 =[[h2 searchWithXPathQuery:@"//a"] firstObject];
+//        NSString *title = [categoryE2 text];
+//        NSString *url = [categoryE2 objectForKey:@"href"];
+//        NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:title,@"title",url,@"url", ma1,@"subNavi",nil];
+//        [ma addObject:dic];
+//
+//    }
+
+    return ma;
+}
+
++(NSMutableArray *)jobboleSubNaviHome:(id)responseObject{
+    
+    TFHpple *hpple = [TFHpple hppleWithHTMLData:responseObject];
+    
+    NSMutableArray *ma = [NSMutableArray arrayWithCapacity:1];
+    
+    TFHppleElement *categoryE1 =[[hpple searchWithXPathQuery:@"//ul[contains(@id, 'main-nav-menu')]"] firstObject];
+    TFHpple *h1 =[TFHpple hppleWithHTMLData:[categoryE1.raw dataUsingEncoding:NSUTF8StringEncoding]];
+    NSArray *arr = [h1 searchWithXPathQuery:@"//li[contains(@class, 'menu-item-object-category')]"];
+    
+    for (int i = 0; i<arr.count; i++) {
+        TFHppleElement *e2 = arr[i];
+        
+        TFHpple *h2 =[TFHpple hppleWithHTMLData:[e2.raw dataUsingEncoding:NSUTF8StringEncoding]];
+        TFHppleElement *categoryE2 =[[h2 searchWithXPathQuery:@"//a"] firstObject];
+        
+        NSString *title = [categoryE2 text];
+        if (title == nil) {
+            TFHppleElement *categoryE3 =[[h2 searchWithXPathQuery:@"//a/span"] firstObject];
+            title = [categoryE3 text];
+        }
+        NSString *url = [categoryE2 objectForKey:@"href"];
+        NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:title,@"title",url,@"url", nil];
+        [ma addObject:dic];
+    }
+    return ma;
+}
+
+
++(NSMutableArray *)jobboleContentInfo:(id)responseObject{
+    
+    TFHpple *hpple = [TFHpple hppleWithHTMLData:responseObject];
+    
+    NSMutableArray *ma = [NSMutableArray arrayWithCapacity:1];
+    
+    TFHppleElement *categoryE1 =[[hpple searchWithXPathQuery:@"//div[contains(@id, 'archive')]"] firstObject];
+    TFHpple *h1 =[TFHpple hppleWithHTMLData:[categoryE1.raw dataUsingEncoding:NSUTF8StringEncoding]];
+    NSArray *arr = [h1 searchWithXPathQuery:@"//div[contains(@class, 'post floated-thumb')]"];
+    
+    for (int i = 0; i<arr.count; i++) {
+        TFHppleElement *e2 = arr[i];
+        
+        TFHpple *h2 =[TFHpple hppleWithHTMLData:[e2.raw dataUsingEncoding:NSUTF8StringEncoding]];
+        TFHppleElement *categoryE2 =[[h2 searchWithXPathQuery:@"//div[@class='post-meta']/p/a[@class='archive-title']"] firstObject];
+        NSString *title = @"";
+        NSString *url = @"";
+        if (categoryE2 == nil) {
+            categoryE2 = [[h2 searchWithXPathQuery:@"//div[@class='post-meta']/p/a[@class='meta-title']"] firstObject];
+        }
+        title = [categoryE2 text];
+        url = [categoryE2 objectForKey:@"href"];
+        if (title == nil) {
+            TFHpple *h3 =[TFHpple hppleWithHTMLData:[categoryE2.raw dataUsingEncoding:NSUTF8StringEncoding]];
+
+            TFHppleElement *categoryE3 =[[h3 searchWithXPathQuery:@"//span"] firstObject];
+            title = [categoryE3 text];
+        }
+        NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:title,@"title",url,@"url", nil];
+        [ma addObject:dic];
+    }
+    return ma;
+}
+
 
 @end
 

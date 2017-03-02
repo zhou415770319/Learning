@@ -34,6 +34,7 @@
 		917835B91E4AEA390006C8F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917835B71E4AEA390006C8F3 /* LaunchScreen.storyboard */; };
 		917835C41E4AEA390006C8F3 /* LearningFEITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917835C31E4AEA390006C8F3 /* LearningFEITests.swift */; };
 		917835CF1E4AEA390006C8F3 /* LearningFEIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917835CE1E4AEA390006C8F3 /* LearningFEIUITests.swift */; };
+		91846B6E1E669CC100E4A89C /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91846B6D1E669CC100E4A89C /* Test2ViewController.m */; };
 		91A474781E4AF7B2004EF815 /* ZFPreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A474771E4AF7B2004EF815 /* ZFPreViewController.m */; };
 		91A474831E4AF82B004EF815 /* ZFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A4747C1E4AF82B004EF815 /* ZFScrollView.m */; };
 		91A474881E4AF8CB004EF815 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A474871E4AF8CB004EF815 /* LoginViewController.swift */; };
@@ -169,6 +170,8 @@
 		917835CA1E4AEA390006C8F3 /* LearningFEIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningFEIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		917835CE1E4AEA390006C8F3 /* LearningFEIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningFEIUITests.swift; sourceTree = "<group>"; };
 		917835D01E4AEA390006C8F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91846B6C1E669CC100E4A89C /* Test2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
+		91846B6D1E669CC100E4A89C /* Test2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
 		91A474691E4AEC30004EF815 /* LearningFEI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearningFEI-Bridging-Header.h"; sourceTree = "<group>"; };
 		91A4746D1E4AECDD004EF815 /* LearningFEI.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearningFEI.pch; sourceTree = "<group>"; };
 		91A474761E4AF7B2004EF815 /* ZFPreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPreViewController.h; sourceTree = "<group>"; };
@@ -615,6 +618,8 @@
 				91AD858B1E4D994B00D613ED /* AFNTestViewController.m */,
 				913E304F1E60079300E1D3F1 /* TestContentViewController.h */,
 				913E30501E60079300E1D3F1 /* TestContentViewController.m */,
+				91846B6C1E669CC100E4A89C /* Test2ViewController.h */,
+				91846B6D1E669CC100E4A89C /* Test2ViewController.m */,
 				913E30521E60107800E1D3F1 /* WebViewController.h */,
 				913E30531E60107800E1D3F1 /* WebViewController.m */,
 			);
@@ -882,6 +887,7 @@
 				91AD85831E4D55AA00D613ED /* NSArray+Log.m in Sources */,
 				91AD85851E4D55AA00D613ED /* ZFSpiderTool.m in Sources */,
 				9116F97A1E5AE8DA00024BAB /* MenuTableViewCell.m in Sources */,
+				91846B6E1E669CC100E4A89C /* Test2ViewController.m in Sources */,
 				913E30581E63C3A900E1D3F1 /* AFNetworkingTool.m in Sources */,
 				91AD858C1E4D994B00D613ED /* AFNTestViewController.m in Sources */,
 				91AD857B1E4D537E00D613ED /* HomeViewController.m in Sources */,
