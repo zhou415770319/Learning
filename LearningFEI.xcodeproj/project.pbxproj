@@ -35,6 +35,7 @@
 		917835C41E4AEA390006C8F3 /* LearningFEITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917835C31E4AEA390006C8F3 /* LearningFEITests.swift */; };
 		917835CF1E4AEA390006C8F3 /* LearningFEIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917835CE1E4AEA390006C8F3 /* LearningFEIUITests.swift */; };
 		91846B6E1E669CC100E4A89C /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91846B6D1E669CC100E4A89C /* Test2ViewController.m */; };
+		91846B701E67CD9200E4A89C /* Jobbole.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91846B6F1E67CD9200E4A89C /* Jobbole.storyboard */; };
 		91A474781E4AF7B2004EF815 /* ZFPreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A474771E4AF7B2004EF815 /* ZFPreViewController.m */; };
 		91A474831E4AF82B004EF815 /* ZFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A4747C1E4AF82B004EF815 /* ZFScrollView.m */; };
 		91A474881E4AF8CB004EF815 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A474871E4AF8CB004EF815 /* LoginViewController.swift */; };
@@ -172,6 +173,7 @@
 		917835D01E4AEA390006C8F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91846B6C1E669CC100E4A89C /* Test2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
 		91846B6D1E669CC100E4A89C /* Test2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
+		91846B6F1E67CD9200E4A89C /* Jobbole.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Jobbole.storyboard; sourceTree = "<group>"; };
 		91A474691E4AEC30004EF815 /* LearningFEI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearningFEI-Bridging-Header.h"; sourceTree = "<group>"; };
 		91A4746D1E4AECDD004EF815 /* LearningFEI.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearningFEI.pch; sourceTree = "<group>"; };
 		91A474761E4AF7B2004EF815 /* ZFPreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPreViewController.h; sourceTree = "<group>"; };
@@ -577,6 +579,7 @@
 			isa = PBXGroup;
 			children = (
 				917835B21E4AEA390006C8F3 /* Main.storyboard */,
+				91846B6F1E67CD9200E4A89C /* Jobbole.storyboard */,
 				913E304C1E5EB79900E1D3F1 /* Test.storyboard */,
 				91AD85861E4D98D900D613ED /* Demo.storyboard */,
 				91A474F21E4AFCA0004EF815 /* Login.storyboard */,
@@ -790,6 +793,7 @@
 				91A474DC1E4AFAE9004EF815 /* tab_home_h@2x.png in Resources */,
 				91A474F31E4AFCA0004EF815 /* Login.storyboard in Resources */,
 				91A474C01E4AFAE9004EF815 /* 1.png in Resources */,
+				91846B701E67CD9200E4A89C /* Jobbole.storyboard in Resources */,
 				91A474E91E4AFAE9004EF815 /* tab_relay_h.png in Resources */,
 				91A474D91E4AFAE9004EF815 /* tab_comment_n.png in Resources */,
 				91A474EE1E4AFAE9004EF815 /* tab_share_h@2x.png in Resources */,

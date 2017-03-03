@@ -55,12 +55,12 @@
     
     NSMutableDictionary *pars = [NSMutableDictionary dictionaryWithCapacity:1];
 //    [pars setObject:url forKey:@"urlStr"];
-    [[NetworkingManager standard] request:LINKURL_jobbole_blog Parameters:pars Success:^(AFNResponseModel *model) {
+    [[NetworkingManager standard] request:LINKURL_code4app Parameters:pars Success:^(AFNResponseModel *model) {
         
 //        NSDictionary *dict = model.arr[0];
-//        
+//
 //        self.infos = [NSMutableArray arrayWithArray:[dict objectForKey:@"subCategory"]];
-//        self.infos = [model.dict objectForKey:@"nav-header"];
+//        self.infos = [model.dict objectForKey:@"cardArr"];
         self.infos = [NSMutableArray arrayWithArray:model.arr];
         [self.tableView reloadData];
         NSLog(@"------arr----%@",model.arr);

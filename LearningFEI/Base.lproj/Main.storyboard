@@ -203,6 +203,14 @@
             </objects>
             <point key="canvasLocation" x="2486" y="-1587"/>
         </scene>
+        <!--Jobbole-->
+        <scene sceneID="zCe-7I-8xN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Jobbole" id="vkt-Ru-Hpx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Qv-7u-GM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2517" y="-1503"/>
+        </scene>
         <!--login-->
         <scene sceneID="NaB-DZ-oJQ">
             <objects>
@@ -400,6 +408,9 @@
                                                 <color key="value" red="0.72941176470000002" green="0.46666666670000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="vkt-Ru-Hpx" kind="presentation" id="wkP-86-pJT"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="npy-wq-wtc" imageView="4J1-b7-SWw" style="IBUITableViewCellStyleDefault" id="KZv-rN-tcC" customClass="AnimatableTableViewCell" customModule="IBAnimatable">
                                         <rect key="frame" x="0.0" y="356" width="375" height="44"/>
