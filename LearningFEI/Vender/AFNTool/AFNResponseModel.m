@@ -11,19 +11,21 @@
 @implementation AFNResponseModel
 
 
-- (void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeObject:_arr forKey:@"arr"];
-    [aCoder encodeObject:_dict forKey:@"dict"];
-}
 
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super init]) {
-        _arr = [aDecoder decodeObjectForKey:@"arr"];
-        _dict = [aDecoder decodeObjectForKey:@"dict"];
-    }
-    return self;
-}
 
+//- (void)encodeWithCoder:(NSCoder *)aCoder {
+//    [aCoder encodeObject:_arr forKey:@"arr"];
+//    [aCoder encodeObject:_dict forKey:@"dict"];
+//}
+//
+//- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder {
+//    if (self = [super init]) {
+//        _arr = [aDecoder decodeObjectForKey:@"arr"];
+//        _dict = [aDecoder decodeObjectForKey:@"dict"];
+//    }
+//    return self;
+//}
+//
 
 
 @end

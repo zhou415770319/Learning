@@ -9,6 +9,8 @@
 #import "AFNTestViewController.h"
 #import "TestContentViewController.h"
 #import "NetworkingManager.h"
+#import "Code4appCategory.h"
+#import "MJExtension.h"
 
 @interface AFNTestViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -31,16 +33,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [btn setTitle:@"返回" forState:UIControlStateNormal];
-//    btn.backgroundColor = [UIColor blueColor];
-//    btn.frame = CGRectMake(0, 100, 80, 40);
-//    [btn addTarget:self action:@selector(backBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-//    [self.view addSubview:btn];
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    
-    
+        
     [self.view addSubview:self.tableView];
     
     // Do any additional setup after loading the view.
@@ -56,14 +49,25 @@
     NSMutableDictionary *pars = [NSMutableDictionary dictionaryWithCapacity:1];
 //    [pars setObject:url forKey:@"urlStr"];
     [[NetworkingManager standard] request:LINKURL_code4app Parameters:pars Success:^(AFNResponseModel *model) {
-        
+        NSLog(@"------arr----%@",model.arr);
+        NSMutableArray *ma = [NSMutableArray arrayWithCapacity:1];
 //        NSDictionary *dict = model.arr[0];
 //
 //        self.infos = [NSMutableArray arrayWithArray:[dict objectForKey:@"subCategory"]];
 //        self.infos = [model.dict objectForKey:@"cardArr"];
-        self.infos = [NSMutableArray arrayWithArray:model.arr];
+        
+        for (int i =0 ; i<model.arr.count; i++) {
+            NSDictionary *dic =model.arr[i];
+            Code4appCategory *cate = [Code4appCategory mj_objectWithKeyValues:dic];
+            [ma addObject:cate];
+            NSLog(@"------%d----category---%@",i,cate);
+        }
+        
+//        self.infos = [NSMutableArray arrayWithArray:model.arr];
+        self.infos =ma;
+//        Code4appCategory *cate = [Code4appCategory mj_objectWithKeyValues:model.arr[0]];
+        
         [self.tableView reloadData];
-        NSLog(@"------arr----%@",model.arr);
     } Failture:^(id error) {
         NSLog(@"%@",error);
 
@@ -92,9 +96,13 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
-    NSDictionary *dict = self.infos[indexPath.row];
+    Code4appCategory *cate = self.infos[indexPath.row];
     
-    cell.textLabel.text =[dict objectForKey:@"title"];
+        cell.textLabel.text = cate.category;
+
+//    NSDictionary *dict = self.infos[indexPath.row];
+//    
+//    cell.textLabel.text =[dict objectForKey:@"title"];
     
     
     return cell;

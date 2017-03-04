@@ -10,6 +10,8 @@
 
 @interface AFNResponseModel : NSObject
 
+@property(nonatomic,copy)NSString *idstr;
+
 @property(nonatomic,retain)NSArray *arr;
 
 @property(nonatomic,retain)NSDictionary *dict;

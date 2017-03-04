@@ -80,9 +80,7 @@
         //失败
         failture(error.description);
     }];
-    
-    
-    
+        
 }
 
 
