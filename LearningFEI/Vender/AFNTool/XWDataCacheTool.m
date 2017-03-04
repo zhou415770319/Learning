@@ -8,7 +8,6 @@
 
 #import "XWDataCacheTool.h"
 #import "FMDB.h"
-#import "MJExtension.h"
 
 static FMDatabaseQueue *_queue;
 
@@ -80,6 +79,29 @@ static FMDatabaseQueue *_queue;
     }];
     
 }
+
++(NSDictionary *)dictionaryWithID:(NSString *)ID{
+    
+    __block NSDictionary *dict = [NSDictionary dictionary];
+    [_queue inDatabase:^(FMDatabase *db) {
+        
+        FMResultSet *result=[db executeQuery:@"select * from info where idstr=?",ID];
+        if(result){
+            
+            while ([result next]) {
+                NSData * data =[result objectForColumnName:@"data"];
+                if (data.length!=0) {
+                    dict = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+                }else{
+                    dict = nil;
+                }
+            }
+        }
+        
+    }];
+    return dict;
+}
+
 
 +(void)addData:(NSData *)data andId:(NSString *)idstr
 {

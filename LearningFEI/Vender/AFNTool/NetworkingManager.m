@@ -53,11 +53,14 @@
     
     //如果数据库里面有值就先读取数据库
     if(model.idStr.length>0){
-        AFNResponseModel *resModel = [XWDataCacheTool modelWithID:model.idStr];
-        
-        if((resModel.arr != nil &&resModel.arr.count !=0) || resModel.dict !=nil ){
-            success(resModel);
-            return;
+        NSDictionary *dict = [XWDataCacheTool dictionaryWithID:model.idStr];
+        if (dict != nil) {
+            AFNResponseModel *resModel = [AFNResponseModel mj_objectWithKeyValues:dict];
+            
+            if((resModel.arr != nil &&resModel.arr.count !=0) || resModel.dict !=nil ){
+                success(resModel);
+                return;
+            }
         }
     }
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
@@ -72,7 +75,8 @@
             //发送网络请求获取最新数据  先清空旧的数据
             [XWDataCacheTool deleteWidthId:model.idStr];
             //做数据缓存
-            [XWDataCacheTool addModel:resModel andId:model.idStr];
+            [XWDataCacheTool addDict:resModel.mj_keyValues andId:model.idStr];
+//            [XWDataCacheTool addModel:resModel.mj_keyValues andId:model.idStr];
         }
         success(resModel);
         

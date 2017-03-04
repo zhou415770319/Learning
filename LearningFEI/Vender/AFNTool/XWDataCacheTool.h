@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "AFNResponseModel.h"
+#import "MJExtension.h"
 
 @interface XWDataCacheTool : NSObject
 
@@ -21,6 +22,8 @@
 
 +(void)addArr:(NSArray*)arr andId:(NSString*)idstr;
 +(void)addDict:(NSDictionary*)dict andId:(NSString*)idstr;
++(NSDictionary *)dictionaryWithID:(NSString *)ID;
+
 +(void)addData:(NSData *)data andId:(NSString *)idstr;
 
 

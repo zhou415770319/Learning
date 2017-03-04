@@ -37,8 +37,8 @@
         case LINKURL_health:
             urlStr = urlArr[url];
             req.urlStr = urlStr;
-            req.idStr = nil;
-//            req.idStr = urlStr;
+//            req.idStr = nil;
+            req.idStr = urlStr;
 
             req.Parameters = parameters;
             break;
