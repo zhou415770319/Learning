@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Test View Controller-->
+        <!--Test Stack View Controller-->
         <scene sceneID="y8H-Vw-J76">
             <objects>
-                <viewController id="fhp-WA-ugV" customClass="AFNTestViewController" sceneMemberID="viewController">
+                <viewController id="fhp-WA-ugV" customClass="TestStackViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NJl-3x-LSb"/>
                         <viewControllerLayoutGuide type="bottom" id="0hn-0L-k57"/>

@@ -64,7 +64,7 @@
         }
         
 //        self.infos = [NSMutableArray arrayWithArray:model.arr];
-        self.infos =ma;
+        self.infos = ma;
 //        Code4appCategory *cate = [Code4appCategory mj_objectWithKeyValues:model.arr[0]];
         
         [self.tableView reloadData];

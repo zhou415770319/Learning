@@ -180,7 +180,7 @@
                   moduleName = "LearningFEI"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhoufei/Desktop/gitHub/product/LearningFEI/LearningFEI/Vender/AFNTool/AFNetworkingTool.m"
-                  timestampString = "510300202.133532"
+                  timestampString = "510550835.349334"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "30"
@@ -195,7 +195,7 @@
                   moduleName = "LearningFEI"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhoufei/Desktop/gitHub/product/LearningFEI/LearningFEI/Vender/AFNTool/AFNetworkingTool.m"
-                  timestampString = "510300202.134847"
+                  timestampString = "510550835.350797"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "30"
@@ -496,7 +496,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LearningFEI/Vender/AFNTool/LinkurlTool.m"
@@ -675,54 +675,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LearningFEI/Vender/AFNTool/NetworkingManager.m"
-            timestampString = "510300024.584814"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "-requestModel:Link:Success:Failture:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[NetworkingManager requestModel:Link:Success:Failture:]"
-                  moduleName = "LearningFEI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhoufei/Desktop/gitHub/product/LearningFEI/LearningFEI/Vender/AFNTool/NetworkingManager.m"
-                  timestampString = "510300202.218407"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "1019">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__56-[NetworkingManager requestModel:Link:Success:Failture:]_block_invoke"
-                  moduleName = "LearningFEI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhoufei/Desktop/gitHub/product/LearningFEI/LearningFEI/Vender/AFNTool/NetworkingManager.m"
-                  timestampString = "510300202.219665"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "19">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "LearningFEI/Vender/AFNTool/XWDataCacheTool.m"
             timestampString = "510300024.584814"
             startingColumnNumber = "9223372036854775807"
@@ -772,7 +724,7 @@
                   moduleName = "LearningFEI"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhoufei/Desktop/gitHub/product/LearningFEI/LearningFEI/Vender/AFNTool/XWDataCacheTool.m"
-                  timestampString = "510300202.226879"
+                  timestampString = "510550835.425707"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -787,7 +739,7 @@
                   moduleName = "LearningFEI"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhoufei/Desktop/gitHub/product/LearningFEI/LearningFEI/Vender/AFNTool/XWDataCacheTool.m"
-                  timestampString = "510300202.228471"
+                  timestampString = "510550835.426975"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -820,7 +772,7 @@
                   moduleName = "LearningFEI"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhoufei/Desktop/gitHub/product/LearningFEI/LearningFEI/Vender/AFNTool/XWDataCacheTool.m"
-                  timestampString = "510300202.23138"
+                  timestampString = "510550835.429989"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
@@ -835,7 +787,7 @@
                   moduleName = "LearningFEI"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhoufei/Desktop/gitHub/product/LearningFEI/LearningFEI/Vender/AFNTool/XWDataCacheTool.m"
-                  timestampString = "510300202.232707"
+                  timestampString = "510550835.431232"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
@@ -850,7 +802,7 @@
                   moduleName = "LearningFEI"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/zhoufei/Desktop/gitHub/product/LearningFEI/LearningFEI/Vender/AFNTool/XWDataCacheTool.m"
-                  timestampString = "510300202.234111"
+                  timestampString = "510550835.432459"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
@@ -883,11 +835,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LearningFEI/Vender/AFNTool/NetworkingManager.m"
-            timestampString = "510299993.903944"
+            timestampString = "510369082.012235"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "-requestModel:Link:Success:Failture:"
             landmarkType = "7">
          </BreakpointContent>
@@ -899,12 +851,236 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LearningFEI/Vender/AFNTool/NetworkingManager.m"
-            timestampString = "510300110.954898"
+            timestampString = "510369082.012235"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "-requestModel:Link:Success:Failture:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearningFEI/Main/CocoaChina/CocoachinaHomeViewController.m"
+            timestampString = "510462187.8688"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-viewWillAppear:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearningFEI/Main/CocoaChina/CocoachinaHomeViewController.m"
+            timestampString = "510462187.8688"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-viewWillAppear:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CocoachinaHomeViewController viewWillAppear:]"
+                  moduleName = "LearningFEI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhoufei/Desktop/gitHub/product/LearningFEI/LearningFEI/Main/CocoaChina/CocoachinaHomeViewController.m"
+                  timestampString = "510550835.448393"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__47-[CocoachinaHomeViewController viewWillAppear:]_block_invoke"
+                  moduleName = "LearningFEI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhoufei/Desktop/gitHub/product/LearningFEI/LearningFEI/Main/CocoaChina/CocoachinaHomeViewController.m"
+                  timestampString = "510550835.449701"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "53">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearningFEI/Main/CocoaChina/CocoachinaHomeViewController.m"
+            timestampString = "510462187.8688"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearningFEI/Vender/AFNTool/Model/Cocoachina/CocoachinaHomeModel.m"
+            timestampString = "510455240.511756"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "+modelWithResponseModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearningFEI/Main/TestCode/TestStackViewController.m"
+            timestampString = "510549396.996705"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "-viewWillAppear:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearningFEI/Main/TestCode/TestStackViewController.m"
+            timestampString = "510561158.693604"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearningFEI/Main/TestCode/TestStackViewController.m"
+            timestampString = "510561158.693604"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "-stackV"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearningFEI/Main/TestCode/TestStackViewController.m"
+            timestampString = "510561158.693604"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "-btn2"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearningFEI/Main/TestCode/TestStackViewController.m"
+            timestampString = "510561158.693604"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "-btn3"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearningFEI/Main/TestCode/TestStackViewController.m"
+            timestampString = "510561158.693604"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "-viewWillAppear:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/XRCarouselView/XRCarouselView/XRCarouselView.m"
+            timestampString = "510549548.759671"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "-setImageArray:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LearningFEI/Main/TestCode/TestStackViewController.m"
+            timestampString = "510561158.693604"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "-scrollView"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

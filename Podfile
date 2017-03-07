@@ -18,6 +18,9 @@ target "LearningFEI" do
 
     pod 'MJExtension'
     
+    # 轮播图
+    pod 'XRCarouselView'
+    
     use_frameworks!
 end
 

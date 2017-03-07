@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ViewController</key>
+	<dict>
+		<key>class</key>
+		<string>PreViewController</string>
+		<key>popViewController</key>
+		<dict>
+			<key>class</key>
+			<string>MainViewController</string>
+			<key>rootViewControllers</key>
+			<array>
+				<dict>
+					<key>img</key>
+					<string>0.png</string>
+					<key>class</key>
+					<string>HomeViewController</string>
+				</dict>
+				<dict>
+					<key>img</key>
+					<string>0.png</string>
+					<key>class</key>
+					<string>CodeViewController</string>
+				</dict>
+				<dict>
+					<key>img</key>
+					<string>0.png</string>
+					<key>class</key>
+					<string>ProfileViewController</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>PreViewController</key>
+	<string></string>
+</dict>
+</plist>

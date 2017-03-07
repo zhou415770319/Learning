@@ -60,17 +60,6 @@
     
 }
 
-//- (instancetype)initWithFrame:(CGRect)frame
-//{
-//    self = [super initWithFrame:frame];
-//    if (self) {
-//
-//
-//
-//    }
-//    return self;
-//}
-//
 -(void)setInfos:(NSMutableArray *)infos{
     
     if (_infos!= infos) {

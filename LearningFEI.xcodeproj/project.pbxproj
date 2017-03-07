@@ -25,6 +25,9 @@
 		913E30511E60079300E1D3F1 /* TestContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913E30501E60079300E1D3F1 /* TestContentViewController.m */; };
 		913E30541E60107800E1D3F1 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913E30531E60107800E1D3F1 /* WebViewController.m */; };
 		913E30581E63C3A900E1D3F1 /* AFNetworkingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 913E30571E63C3A900E1D3F1 /* AFNetworkingTool.m */; };
+		9144FA2F1E6CEA770011A614 /* RankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9144FA2E1E6CEA770011A614 /* RankModel.m */; };
+		9144FA321E6CEA8F0011A614 /* ScrollInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9144FA311E6CEA8F0011A614 /* ScrollInfoModel.m */; };
+		9144FA351E6D06180011A614 /* TestStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9144FA341E6D06180011A614 /* TestStackViewController.m */; };
 		9146D9321E5D31FD00DA4207 /* LinkurlTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9146D9311E5D31FD00DA4207 /* LinkurlTool.m */; };
 		9146D9351E5D37D000DA4207 /* AFNResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9146D9341E5D37D000DA4207 /* AFNResponseModel.m */; };
 		917835AF1E4AEA390006C8F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917835AE1E4AEA390006C8F3 /* AppDelegate.swift */; };
@@ -38,6 +41,11 @@
 		91846B701E67CD9200E4A89C /* Jobbole.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91846B6F1E67CD9200E4A89C /* Jobbole.storyboard */; };
 		91846B751E691BF600E4A89C /* Code4appCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 91846B741E691BF600E4A89C /* Code4appCategory.m */; };
 		91846B781E691FB400E4A89C /* LinkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91846B771E691FB400E4A89C /* LinkModel.m */; };
+		91846B7B1E6C0F3400E4A89C /* CocoachinaHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91846B7A1E6C0F3400E4A89C /* CocoachinaHomeViewController.m */; };
+		91846B7E1E6C0F5100E4A89C /* CocoachinaCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91846B7D1E6C0F5100E4A89C /* CocoachinaCodeViewController.m */; };
+		91846B821E6C159A00E4A89C /* CocoachinaHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91846B811E6C159A00E4A89C /* CocoachinaHomeModel.m */; };
+		91846B851E6C161A00E4A89C /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91846B841E6C161A00E4A89C /* BaseModel.m */; };
+		91846B881E6C263300E4A89C /* CardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91846B871E6C263300E4A89C /* CardModel.m */; };
 		91A474781E4AF7B2004EF815 /* ZFPreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A474771E4AF7B2004EF815 /* ZFPreViewController.m */; };
 		91A474831E4AF82B004EF815 /* ZFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A4747C1E4AF82B004EF815 /* ZFScrollView.m */; };
 		91A474881E4AF8CB004EF815 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A474871E4AF8CB004EF815 /* LoginViewController.swift */; };
@@ -103,6 +111,7 @@
 		91AD85851E4D55AA00D613ED /* ZFSpiderTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AD85821E4D55AA00D613ED /* ZFSpiderTool.m */; };
 		91AD85881E4D98D900D613ED /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91AD85861E4D98D900D613ED /* Demo.storyboard */; };
 		91AD858C1E4D994B00D613ED /* AFNTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AD858B1E4D994B00D613ED /* AFNTestViewController.m */; };
+		91DB4F871E6E6E2D00CBDB90 /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91DB4F861E6E6E2D00CBDB90 /* app.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +165,13 @@
 		913E30531E60107800E1D3F1 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		913E30561E63C3A900E1D3F1 /* AFNetworkingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkingTool.h; sourceTree = "<group>"; };
 		913E30571E63C3A900E1D3F1 /* AFNetworkingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingTool.m; sourceTree = "<group>"; };
+		9144FA2D1E6CEA770011A614 /* RankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankModel.h; sourceTree = "<group>"; };
+		9144FA2E1E6CEA770011A614 /* RankModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankModel.m; sourceTree = "<group>"; };
+		9144FA301E6CEA8F0011A614 /* ScrollInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollInfoModel.h; sourceTree = "<group>"; };
+		9144FA311E6CEA8F0011A614 /* ScrollInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollInfoModel.m; sourceTree = "<group>"; };
+		9144FA331E6D06180011A614 /* TestStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestStackViewController.h; sourceTree = "<group>"; };
+		9144FA341E6D06180011A614 /* TestStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestStackViewController.m; sourceTree = "<group>"; };
+		9144FA361E6D07720011A614 /* Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 		9146D9301E5D31FD00DA4207 /* LinkurlTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkurlTool.h; sourceTree = "<group>"; };
 		9146D9311E5D31FD00DA4207 /* LinkurlTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkurlTool.m; sourceTree = "<group>"; };
 		9146D9331E5D37D000DA4207 /* AFNResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNResponseModel.h; sourceTree = "<group>"; };
@@ -180,6 +196,16 @@
 		91846B741E691BF600E4A89C /* Code4appCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Code4appCategory.m; sourceTree = "<group>"; };
 		91846B761E691FB400E4A89C /* LinkModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkModel.h; sourceTree = "<group>"; };
 		91846B771E691FB400E4A89C /* LinkModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkModel.m; sourceTree = "<group>"; };
+		91846B791E6C0F3400E4A89C /* CocoachinaHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoachinaHomeViewController.h; sourceTree = "<group>"; };
+		91846B7A1E6C0F3400E4A89C /* CocoachinaHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoachinaHomeViewController.m; sourceTree = "<group>"; };
+		91846B7C1E6C0F5100E4A89C /* CocoachinaCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoachinaCodeViewController.h; sourceTree = "<group>"; };
+		91846B7D1E6C0F5100E4A89C /* CocoachinaCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoachinaCodeViewController.m; sourceTree = "<group>"; };
+		91846B801E6C159A00E4A89C /* CocoachinaHomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoachinaHomeModel.h; sourceTree = "<group>"; };
+		91846B811E6C159A00E4A89C /* CocoachinaHomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoachinaHomeModel.m; sourceTree = "<group>"; };
+		91846B831E6C161A00E4A89C /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		91846B841E6C161A00E4A89C /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		91846B861E6C263300E4A89C /* CardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardModel.h; sourceTree = "<group>"; };
+		91846B871E6C263300E4A89C /* CardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardModel.m; sourceTree = "<group>"; };
 		91A474691E4AEC30004EF815 /* LearningFEI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearningFEI-Bridging-Header.h"; sourceTree = "<group>"; };
 		91A4746D1E4AECDD004EF815 /* LearningFEI.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LearningFEI.pch; sourceTree = "<group>"; };
 		91A474761E4AF7B2004EF815 /* ZFPreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPreViewController.h; sourceTree = "<group>"; };
@@ -255,6 +281,20 @@
 		91AD85871E4D98D900D613ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LearningFEI/Base.lproj/Demo.storyboard; sourceTree = SOURCE_ROOT; };
 		91AD858A1E4D994B00D613ED /* AFNTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNTestViewController.h; sourceTree = "<group>"; };
 		91AD858B1E4D994B00D613ED /* AFNTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNTestViewController.m; sourceTree = "<group>"; };
+		91DB4F861E6E6E2D00CBDB90 /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = app.plist; sourceTree = "<group>"; };
+		91DB4FCE1E6E8B0F00CBDB90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91DB4FD01E6E8B0F00CBDB90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		91DB4FD11E6E8B0F00CBDB90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		91DB4FD31E6E8B0F00CBDB90 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		91DB4FD41E6E8B0F00CBDB90 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		91DB4FD71E6E8B0F00CBDB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91DB4FD91E6E8B0F00CBDB90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91DB4FDC1E6E8B0F00CBDB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91DB4FDE1E6E8B0F00CBDB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91DB4FE71E6E8B0F00CBDB90 /* CocoachinaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoachinaTests.m; sourceTree = "<group>"; };
+		91DB4FE91E6E8B0F00CBDB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91DB4FF21E6E8B0F00CBDB90 /* CocoachinaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoachinaUITests.m; sourceTree = "<group>"; };
+		91DB4FF41E6E8B0F00CBDB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECA327FB9208B4AD4C6CA88 /* Pods-LearningFEI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningFEI.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearningFEI/Pods-LearningFEI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -304,6 +344,10 @@
 		9116F94A1E56A32700024BAB /* CocoaChina */ = {
 			isa = PBXGroup;
 			children = (
+				91846B791E6C0F3400E4A89C /* CocoachinaHomeViewController.h */,
+				91846B7A1E6C0F3400E4A89C /* CocoachinaHomeViewController.m */,
+				91846B7C1E6C0F5100E4A89C /* CocoachinaCodeViewController.h */,
+				91846B7D1E6C0F5100E4A89C /* CocoachinaCodeViewController.m */,
 			);
 			path = CocoaChina;
 			sourceTree = "<group>";
@@ -365,6 +409,9 @@
 				917835AD1E4AEA390006C8F3 /* LearningFEI */,
 				917835C21E4AEA390006C8F3 /* LearningFEITests */,
 				917835CD1E4AEA390006C8F3 /* LearningFEIUITests */,
+				91DB4FCC1E6E8B0F00CBDB90 /* Cocoachina */,
+				91DB4FE61E6E8B0F00CBDB90 /* CocoachinaTests */,
+				91DB4FF11E6E8B0F00CBDB90 /* CocoachinaUITests */,
 				917835AC1E4AEA390006C8F3 /* Products */,
 				0EC72FD8BAD7302DE6C6DD2F /* Pods */,
 				76157407D23F9745423A8A0A /* Frameworks */,
@@ -414,9 +461,12 @@
 		91846B711E691BD000E4A89C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				91846B7F1E6C151000E4A89C /* Cocoachina */,
 				91846B721E691BD000E4A89C /* Code4app */,
 				91846B761E691FB400E4A89C /* LinkModel.h */,
 				91846B771E691FB400E4A89C /* LinkModel.m */,
+				91846B831E6C161A00E4A89C /* BaseModel.h */,
+				91846B841E6C161A00E4A89C /* BaseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -430,6 +480,21 @@
 			path = Code4app;
 			sourceTree = "<group>";
 		};
+		91846B7F1E6C151000E4A89C /* Cocoachina */ = {
+			isa = PBXGroup;
+			children = (
+				91846B801E6C159A00E4A89C /* CocoachinaHomeModel.h */,
+				91846B811E6C159A00E4A89C /* CocoachinaHomeModel.m */,
+				91846B861E6C263300E4A89C /* CardModel.h */,
+				91846B871E6C263300E4A89C /* CardModel.m */,
+				9144FA2D1E6CEA770011A614 /* RankModel.h */,
+				9144FA2E1E6CEA770011A614 /* RankModel.m */,
+				9144FA301E6CEA8F0011A614 /* ScrollInfoModel.h */,
+				9144FA311E6CEA8F0011A614 /* ScrollInfoModel.m */,
+			);
+			path = Cocoachina;
+			sourceTree = "<group>";
+		};
 		91A4746E1E4AED8B004EF815 /* appInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,6 +505,7 @@
 				917835BA1E4AEA390006C8F3 /* Info.plist */,
 				91A474691E4AEC30004EF815 /* LearningFEI-Bridging-Header.h */,
 				91A4746D1E4AECDD004EF815 /* LearningFEI.pch */,
+				9144FA361E6D07720011A614 /* Bridge-Header.h */,
 			);
 			name = appInfo;
 			sourceTree = "<group>";
@@ -555,6 +621,7 @@
 			isa = PBXGroup;
 			children = (
 				91A4749A1E4AFAE9004EF815 /* CocoachinaNewsInfos.plist */,
+				91DB4F861E6E6E2D00CBDB90 /* app.plist */,
 				91A4749B1E4AFAE9004EF815 /* controlCategory.plist */,
 				91A4749C1E4AFAE9004EF815 /* FunctionInfos.plist */,
 				91A4749D1E4AFAE9004EF815 /* Profile.plist */,
@@ -651,8 +718,52 @@
 				91846B6D1E669CC100E4A89C /* Test2ViewController.m */,
 				913E30521E60107800E1D3F1 /* WebViewController.h */,
 				913E30531E60107800E1D3F1 /* WebViewController.m */,
+				9144FA331E6D06180011A614 /* TestStackViewController.h */,
+				9144FA341E6D06180011A614 /* TestStackViewController.m */,
 			);
 			path = TestCode;
+			sourceTree = "<group>";
+		};
+		91DB4FCC1E6E8B0F00CBDB90 /* Cocoachina */ = {
+			isa = PBXGroup;
+			children = (
+				91DB4FD01E6E8B0F00CBDB90 /* AppDelegate.h */,
+				91DB4FD11E6E8B0F00CBDB90 /* AppDelegate.m */,
+				91DB4FD31E6E8B0F00CBDB90 /* ViewController.h */,
+				91DB4FD41E6E8B0F00CBDB90 /* ViewController.m */,
+				91DB4FD61E6E8B0F00CBDB90 /* Main.storyboard */,
+				91DB4FD91E6E8B0F00CBDB90 /* Assets.xcassets */,
+				91DB4FDB1E6E8B0F00CBDB90 /* LaunchScreen.storyboard */,
+				91DB4FDE1E6E8B0F00CBDB90 /* Info.plist */,
+				91DB4FCD1E6E8B0F00CBDB90 /* Supporting Files */,
+			);
+			path = Cocoachina;
+			sourceTree = "<group>";
+		};
+		91DB4FCD1E6E8B0F00CBDB90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91DB4FCE1E6E8B0F00CBDB90 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91DB4FE61E6E8B0F00CBDB90 /* CocoachinaTests */ = {
+			isa = PBXGroup;
+			children = (
+				91DB4FE71E6E8B0F00CBDB90 /* CocoachinaTests.m */,
+				91DB4FE91E6E8B0F00CBDB90 /* Info.plist */,
+			);
+			path = CocoachinaTests;
+			sourceTree = "<group>";
+		};
+		91DB4FF11E6E8B0F00CBDB90 /* CocoachinaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				91DB4FF21E6E8B0F00CBDB90 /* CocoachinaUITests.m */,
+				91DB4FF41E6E8B0F00CBDB90 /* Info.plist */,
+			);
+			path = CocoachinaUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -793,6 +904,7 @@
 				91A474F01E4AFAE9004EF815 /* tab_share_n@2x.png in Resources */,
 				91A474E11E4AFAE9004EF815 /* tab_more_h.png in Resources */,
 				91A474C81E4AFAE9004EF815 /* 6.png in Resources */,
+				91DB4F871E6E6E2D00CBDB90 /* app.plist in Resources */,
 				91A474DA1E4AFAE9004EF815 /* tab_comment_n@2x.png in Resources */,
 				91A474E61E4AFAE9004EF815 /* tab_qworld_press@2x.png in Resources */,
 				91A474C51E4AFAE9004EF815 /* 3.png in Resources */,
@@ -911,14 +1023,21 @@
 				913E30511E60079300E1D3F1 /* TestContentViewController.m in Sources */,
 				9116F9771E5AE8C600024BAB /* MenuModel.m in Sources */,
 				9116F9711E5AE86E00024BAB /* CommonMenuView.m in Sources */,
+				9144FA351E6D06180011A614 /* TestStackViewController.m in Sources */,
 				9116F9681E5AC0DD00024BAB /* SXTitleLable.m in Sources */,
 				91A474781E4AF7B2004EF815 /* ZFPreViewController.m in Sources */,
+				9144FA2F1E6CEA770011A614 /* RankModel.m in Sources */,
 				9116F96E1E5AE6F300024BAB /* RefrenceCodeViewController.m in Sources */,
 				917835B11E4AEA390006C8F3 /* ViewController.swift in Sources */,
+				91846B7E1E6C0F5100E4A89C /* CocoachinaCodeViewController.m in Sources */,
 				91AD85831E4D55AA00D613ED /* NSArray+Log.m in Sources */,
+				91846B821E6C159A00E4A89C /* CocoachinaHomeModel.m in Sources */,
 				91AD85851E4D55AA00D613ED /* ZFSpiderTool.m in Sources */,
 				9116F97A1E5AE8DA00024BAB /* MenuTableViewCell.m in Sources */,
+				91846B851E6C161A00E4A89C /* BaseModel.m in Sources */,
+				9144FA321E6CEA8F0011A614 /* ScrollInfoModel.m in Sources */,
 				91846B6E1E669CC100E4A89C /* Test2ViewController.m in Sources */,
+				91846B881E6C263300E4A89C /* CardModel.m in Sources */,
 				913E30581E63C3A900E1D3F1 /* AFNetworkingTool.m in Sources */,
 				91AD858C1E4D994B00D613ED /* AFNTestViewController.m in Sources */,
 				91AD857B1E4D537E00D613ED /* HomeViewController.m in Sources */,
@@ -929,6 +1048,7 @@
 				9116F9641E5A85D000024BAB /* XWDataCacheTool.m in Sources */,
 				9146D9351E5D37D000DA4207 /* AFNResponseModel.m in Sources */,
 				91A474F91E4B01E9004EF815 /* UIView+Toast.m in Sources */,
+				91846B7B1E6C0F3400E4A89C /* CocoachinaHomeViewController.m in Sources */,
 				917835AF1E4AEA390006C8F3 /* AppDelegate.swift in Sources */,
 				91AD85841E4D55AA00D613ED /* NSString+Regex.m in Sources */,
 				91A474831E4AF82B004EF815 /* ZFScrollView.m in Sources */,
@@ -1000,6 +1120,22 @@
 				91AD85871E4D98D900D613ED /* Base */,
 			);
 			name = Demo.storyboard;
+			sourceTree = "<group>";
+		};
+		91DB4FD61E6E8B0F00CBDB90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91DB4FD71E6E8B0F00CBDB90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		91DB4FDB1E6E8B0F00CBDB90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91DB4FDC1E6E8B0F00CBDB90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
